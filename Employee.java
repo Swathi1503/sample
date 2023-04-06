@@ -23,6 +23,9 @@ public class Employee {
 	@Column(name = "empname")
 	private String name;
 
+	@Column(name="empmobile")
+	private String mobile;
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "LibId")
 	private LibraryMembership type;
